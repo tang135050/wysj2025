@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>暖圈共生 - 玩家社区</title>
+    <!-- 删除重复错误的样式引用，保留正确路径 -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑", sans-serif;
+            background: #fff;
+            color: #333;
+        }
+        .header {
+            background: #FFE6F2;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #B3D9F2;
+        }
+        .header h1 {
+            margin: 0;
+            color: #D86C8A;
+        }
+        .nav {
+            background: #F8F9FA;
+            padding: 15px;
+            text-align: center;
+        }
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #D86C8A;
+        }
+        .nav a:hover {
+            color: #B3D9F2;
+        }
+        .community-container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .comment-form {
+            flex: 1;
+            min-width: 300px;
+            background: #F8F9FA;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .comment-list {
+            flex: 2;
+            min-width: 300px;
+            background: #F8F9FA;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        .form-group label {
+            display: block;
+            color: #D86C8A;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #B3D9F2;
+            border-radius: 5px;
+            outline: none;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #D86C8A;
+        }
+        .btn-submit {
+            background: #FFE6F2;
+            color: #D86C8A;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn-submit:hover {
+            background: #B3D9F2;
+            color: #fff;
+        }
+        .comment-item {
+            border-bottom: 1px dashed #B3D9F2;
+            padding: 15px 0;
+        }
+        .comment-item h4 {
+            color: #D86C8A;
+            margin: 0;
+        }
+        .comment-item p {
+            margin: 5px 0;
+            line-height: 1.6;
+        }
+        .footer {
+            background: #FFE6F2;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>暖圈共生 - 玩家社区</h1>
+    </div>
+    <div class="nav">
+        <!-- 修复返回链接：指向同文件夹下的七七个人首页 -->
+        <a href="index.html">返回七七个人首页</a >
+        <a href="derivative.html">查看IP衍生内容</a >
+    </div>
+    <div class="community-container">
+        <!-- 留言表单 -->
+        <div class="comment-form">
+            <h2 style="color: #D86C8A; border-bottom: 2px solid #B3D9F2; padding-bottom: 10px;">分享你的暖暖故事</h2>
+            <form id="commentForm">
+                <div class="form-group">
+                    <label for="username">你的昵称：</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">留言内容：</label>
+                    <textarea id="content" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">提交留言</button>
+            </form>
+        </div>
+        <!-- 留言列表 -->
+        <div class="comment-list">
+            <h2 style="color: #D86C8A; border-bottom: 2px solid #B3D9F2; padding-bottom: 10px;">玩家留言板</h2>
+            <div class="comment-item">
+                <h4>玩家小暖</h4>
+                <p>最喜欢“轻盈泡泡”套装！穿它滑翔的时候太治愈了~</p >
+            </div>
+            <div class="comment-item">
+                <h4>大喵爱好者</h4>
+                <p>有没有人知道哪里能撸到游戏里的小猫？求攻略！</p >
+            </div>
+            <div id="newComment"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2025 七七 网页作品 | 暖圈共生·玩家社区</p >
+    </div>
+
+    <!-- 补全留言交互JS代码 -->
+    <script>
+        const commentForm = document.getElementById('commentForm');
+        const newComment = document.getElementById('newComment');
+
+        commentForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // 阻止表单默认提交
+            const username = document.getElementById('username').value;
+            const content = document.getElementById('content').value;
+
+            // 生成新留言（补全HTML结构，规范格式）
+            const commentHtml = `
+                <div class="comment-item">
+                    <h4>${username}</h4>
+                    <p>${content}</p >
+                </div>
+            `;
+            // 在留言列表末尾添加新留言（原代码仅替换，改为追加）
+            newComment.insertAdjacentHTML('beforeend', commentHtml);
+
+            // 重置表单
+            commentForm.reset();
+            alert('留言提交成功！');
+        });
+    </script>
+</body>
+</html>
