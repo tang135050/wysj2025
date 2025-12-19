@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视听美学 - 音效解析</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 与模板统一的基础样式 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑", sans-serif;
+            background: #fff;
+            color: #333;
+        }
+        .header {
+            background: #FFE6F2;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #B3D9F2;
+        }
+        .header h1 {
+            margin: 0;
+            color: #D86C8A;
+        }
+        .nav {
+            background: #F8F9FA;
+            padding: 15px;
+            text-align: center;
+        }
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #D86C8A;
+        }
+        .nav a:hover {
+            color: #B3D9F2;
+        }
+        .sound-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        /* 音效分类样式（对应模板章节列表） */
+        .sound-list {
+            margin-top: 30px;
+        }
+        .sound-item {
+            background: #F8F9FA;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .sound-item h3 {
+            color: #D86C8A;
+            font-size: 20px;
+            margin-bottom: 10px;
+            border-left: 5px solid #B3D9F2;
+            padding-left: 10px;
+        }
+        .sound-tag {
+            display: inline-block;
+            padding: 4px 10px;
+            background: #B3D9F2;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+        .sound-text {
+            line-height: 1.7;
+        }
+        .footer {
+            background: #FFE6F2;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>视听美学 - 音效解析</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html">返回粥粥主页面</a >
+        <a href="art.html">切换至美术鉴赏</a >
+        <a href="../index.html.html">返回团队分工页</a >
+    </div>
+
+    <div class="sound-container">
+        <p>《无限暖暖》的音效设计以“沉浸感”为核心，通过四大类音效构建立体听觉体验，与场景、玩法深度绑定：</p >
+        
+        <div class="sound-list">
+            <!-- 音效1：环境氛围音效 -->
+            <div class="sound-item">
+                <h3>1. 环境氛围音效：打造拟真旷野感</h3>
+                <div class="sound-tag">氛围塑造</div>
+                <div class="sound-tag">动态适配</div>
+                <p class="sound-text">
+                    针对不同场景设计专属环境音：沙漠场景的风沙呼啸声随风速强弱变化，森林场景的鸟鸣、枝叶摩挲声与昼夜循环同步，雪地的踏雪声会根据脚步轻重呈现差异。
+                    采用3D空间音效技术，让声音随角色移动呈现方位偏移，如背后的风声、侧方的溪流声，强化探索时的空间纵深感。
+                </p >
+                <p class="sound-text">
+                    <strong>关键亮点：</strong>环境音与天气系统联动，雨天的雨滴声、晴天的风声切换自然，无突兀感。
+                </p >
+            </div>
+
+            <!-- 音效2：互动玩法音效 -->
+            <div class="sound-item">
+                <h3>2. 互动玩法音效：强化操作反馈</h3>
+                <div class="sound-tag">操作反馈</div>
+                <div class="sound-tag">材质区分</div>
+                <p class="sound-text">
+                    穿搭互动时，不同材质服装的摩擦声细节拉满：丝绸的顺滑声、羊毛的厚重声、皮革的硬朗声清晰可辨；饰品佩戴时的金属碰撞声、布料系带的打结声，提升穿搭仪式感。
+                    探索玩法中，奔跑时的脚步声会根据地形（草地/石板/沙地）变化，采集物资、触发机关的音效清脆明快，给予明确操作反馈。
+                </p >
+                <p class="sound-text">
+                    <strong>关键亮点：</strong>解谜场景的提示音效采用“渐进式音量”，引导玩家寻找线索的同时不破坏沉浸感。
+                </p >
+            </div>
+
+            <!-- 音效3：音乐配乐音效 -->
+            <div class="sound-item">
+                <h3>3. 音乐配乐音效：引导情绪起伏</h3>
+                <div class="sound-tag">情绪引导</div>
+                <div class="sound-tag">场景适配</div>
+                <p class="sound-text">
+                    主界面BGM以温暖钢琴+弦乐为基调，传递“治愈探索”的核心氛围；场景配乐贴合地域特色：沙漠场景融入中东风格旋律，森林场景搭配民谣吉他与木笛，雪地场景采用空灵电子音。
+                    剧情高潮时，配乐节奏加快、管弦乐加入，强化史诗感；休闲探索时，旋律放缓、乐器简化，让玩家专注于场景体验。
+                </p >
+                <p class="sound-text">
+                    <strong>关键亮点：</strong>支持“动态配乐”功能，根据玩家行为（战斗/解谜/休闲）自动切换音乐片段，避免重复感。
+                </p >
+            </div>
+
+            <!-- 音效4：细节辅助音效 -->
+            <div class="sound-item">
+                <h3>4. 细节辅助音效：兼顾适配与记忆点</h3>
+                <div class="sound-tag">低负担设计</div>
+                <div class="sound-tag">角色标识</div>
+                <p class="sound-text">
+                    音效系统支持自定义调节，环境音、互动音、音乐可独立控制音量，静音模式下保留关键提示震动反馈，适配不同玩家需求。
+                    核心角色拥有专属音效：暖暖的笑声、大喵的叫声、NPC的标志性台词片段，让角色形象更立体；隐藏彩蛋的专属音效（如秘密宝箱的微光声），提升探索乐趣。
+                </p >
+                <p class="sound-text">
+                    <strong>关键亮点：</strong>所有音效采用“低延迟设计”，操作与音效反馈同步，无卡顿感。
+                </p >
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 粥粥 网页作品 | 视听美学·音效解析</p >
+    </div>
+</body>
+</html>

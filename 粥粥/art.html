@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视听美学 - 美术鉴赏</title>
+    <!-- 引入通用样式 -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 统一基础样式（与其他页面保持一致） */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑", sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+        .header {
+            background: #FFE6F2;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #B3D9F2;
+        }
+        .header h1 {
+            margin: 0;
+            color: #D86C8A;
+        }
+        .nav {
+            background: #F8F9FA;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #D86C8A;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            color: #B3D9F2;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        /* 美术鉴赏专属样式 */
+        .art-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .art-item {
+            background: #F8F9FA;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .art-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .art-desc {
+            padding: 15px;
+        }
+        .art-desc h3 {
+            color: #D86C8A;
+            margin-bottom: 8px;
+        }
+        .art-desc p {
+            line-height: 1.6; /* 与其他页面统一文本行高 */
+            margin: 10px 0;
+        }
+        /* 统一页脚样式 */
+        .footer {
+            background: #FFE6F2;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>视听美学 - 美术鉴赏</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html">返回粥粥个人首页</a >
+        <a href="map.html">地图详解</a >
+    </div>
+
+    <div class="container">
+        <p>《无限暖暖》采用UE5引擎打造，美术风格融合“写实质感”与“奇幻治愈”，以下是核心美术亮点：</p >
+        
+        <div class="art-gallery">
+            <div class="art-item">
+                <img src="images/art-scene.jpg" alt="场景美术">
+                <div class="art-desc">
+                    <h3>场景：自然质感拉满</h3>
+                    <p>花海的花瓣纹理、湖水的波光反射，均通过UE5的Lumen光追技术实现，不同时间（早/中/晚）的光影会实时变化。</p >
+                </div>
+            </div>
+            <div class="art-item">
+                <img src="images/art-cloth.jpg" alt="服装细节">
+                <div class="art-desc">
+                    <h3>服装：材质真实还原</h3>
+                    <p>丝绸的光泽、布料的褶皱、蕾丝的通透感，都通过PBR材质系统精准呈现，甚至能看到针脚的细节。</p >
+                </div>
+            </div>
+            <div class="art-item">
+                <img src="images/art-character.jpg" alt="角色微表情">
+                <div class="art-desc">
+                    <h3>角色：微表情生动</h3>
+                    <p>苏暖暖与NPC的表情会随对话情绪变化（如开心时眼角弯起、困惑时皱眉），提升代入感。</p >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 统一添加页脚 -->
+    <div class="footer">
+        <p>© 2025 粥粥 网页作品 | 家家有本暖暖的经</p >
+    </div>
+
+    <!-- 通用脚本 -->
+    <script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粥粥 - 旷野探秘&视听美学</title>
+    <!-- 引入通用样式 -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 页面基础样式（与Kiki页统一） */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑", sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+        .header {
+            background: #FFE6F2;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #B3D9F2;
+        }
+        .header h1 {
+            margin: 0;
+            color: #D86C8A;
+        }
+        .nav {
+            background: #F8F9FA;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #D86C8A;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            color: #B3D9F2;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        /* 模块专属样式 */
+        .module-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .module-card {
+            background: #F8F9FA;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .module-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .module-card h3 {
+            color: #D86C8A;
+            margin-bottom: 10px;
+        }
+        .module-card p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        .module-card a {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #FFE6F2;
+            color: #D86C8A;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .module-card a:hover {
+            background: #B3D9F2;
+            color: #fff;
+        }
+        /* 统一页脚样式 */
+        .footer {
+            background: #FFE6F2;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>粥粥负责模块：旷野探秘 & 视听美学</h1>
+    </div>
+    <div class="nav">
+        <a href="../index.html.html">返回团队分工页</a >
+        <a href="map.html">旷野探秘·地图详解</a >
+        <a href="art.html">视听美学·美术鉴赏</a >
+        <a href="analysis.html">视听美学·音效解析</a >
+    <div class="container">
+        <h2 style="color: #D86C8A; border-bottom: 2px solid #B3D9F2; padding-bottom: 10px;">我的模块内容</h2>
+        
+        <div class="module-grid">
+            <!-- 模块三入口 -->
+            <div class="module-card">
+                <img src="images/map-banner.jpg" alt="旷野探秘">
+                <h3>模块三：旷野探秘</h3>
+                <p>详解《无限暖暖》开放世界地图、隐藏谜题与休闲玩法</p >
+                <a href="map.html">进入地图详解</a >
+            </div>
+            <!-- 模块四入口 -->
+            <div class="module-card">
+                <img src="images/art-banner.jpg" alt="视听美学">
+                <h3>模块四：视听美学</h3>
+                <p>赏析UE5打造的画面质感与沉浸式音效设计</p >
+                <a href="art.html">进入美术鉴赏</a >
+            </div>
+        </div>
+    </div>
+
+    <!-- 统一添加页脚 -->
+    <div class="footer">
+        <p>© 2025 粥粥 网页作品 | 家家有本暖暖的经</p >
+    </div>
+
+    <!-- 通用脚本 -->
+    <script src="js/common.js"></script>
+</body>
+</html>

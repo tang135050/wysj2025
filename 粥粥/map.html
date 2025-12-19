@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旷野探秘 - 地图详解</title>
+    <!-- 引入通用样式 -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 统一基础样式（与其他页面保持一致） */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑", sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+        .header {
+            background: #FFE6F2;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #B3D9F2;
+        }
+        .header h1 {
+            margin: 0;
+            color: #D86C8A;
+        }
+        .nav {
+            background: #F8F9FA;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #D86C8A;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            color: #B3D9F2;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        /* 地图模块专属样式 */
+        .map-detail {
+            margin-top: 30px;
+        }
+        .map-item {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #B3D9F2;
+        }
+        .map-img {
+            flex: 1;
+            min-width: 300px;
+        }
+        .map-img img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .map-info {
+            flex: 2;
+            min-width: 300px;
+        }
+        .map-info h3 {
+            color: #D86C8A;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .map-tag {
+            display: inline-block;
+            padding: 4px 10px;
+            background: #B3D9F2;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        .map-info p {
+            line-height: 1.6; /* 与其他页面统一文本行高 */
+            margin: 10px 0;
+        }
+        /* 统一页脚样式 */
+        .footer {
+            background: #FFE6F2;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>旷野探秘 - 地图详解</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html">返回粥粥个人首页</a >
+        <a href="art.html">美术鉴赏</a >
+    </div>
+
+    <div class="container">
+        <p>《无限暖暖》开放世界包含3大核心区域，每个区域都藏着专属谜题与资源：</p >
+        
+        <div class="map-detail">
+            <div class="map-item">
+                <div class="map-img">
+                    <img src="images/map-wishfield.jpg" alt="心愿原野">
+                </div>
+                <div class="map-info">
+                    <h3>心愿原野</h3>
+                    <div class="map-tag">新手区域</div>
+                    <div class="map-tag">花海场景</div>
+                    <p>初始出生区域，以大片花海和小镇“花愿镇”为核心，可互动元素包括：<br>
+                    1. 花愿镇NPC的日常委托；<br>
+                    2. 花海中的“奇想星”收集点（需穿轻盈类服装滑翔到达）；<br>
+                    3. 湖边钓鱼点（可获得服装材料）。</p >
+                </div>
+            </div>
+
+            <!-- 古老遗迹 -->
+            <div class="map-item">
+                <div class="map-img">
+                    <img src="images/map-ruins.jpg" alt="古老遗迹">
+                </div>
+                <div class="map-info">
+                    <h3>古老遗迹</h3>
+                    <div class="map-tag">解谜区域</div>
+                    <div class="map-tag">奇幻场景</div>
+                    <p>奇迹大陆的古代神明遗址，核心玩法是“服装解谜”：<br>
+                    1. 穿“奇幻类服装”可激活遗迹机关；<br>
+                    2. 隐藏宝箱需搭配“发光类服装”解锁；<br>
+                    3. 遗迹深处有BOSS战（需高属性服装）。</p >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 统一添加页脚 -->
+    <div class="footer">
+        <p>© 2025 粥粥 网页作品 | 家家有本暖暖的经</p >
+    </div>
+
+    <!-- 通用脚本 -->
+    <script src="js/common.js"></script>
+</body>
+</html>
