@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服装分类大全 - 穿搭万象</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 与阿章页面统一的基础样式 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑", sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+        .header {
+            background: #FFE6F2;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #B3D9F2;
+        }
+        .header h1 {
+            margin: 0;
+            color: #D86C8A;
+        }
+        .nav {
+            background: #F8F9FA;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #D86C8A;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            color: #B3D9F2;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        /* 分类列表样式 */
+        .category-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .category-item {
+            background: #F8F9FA;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .category-item h3 {
+            color: #D86C8A;
+            border-bottom: 1px solid #B3D9F2;
+            padding-bottom: 8px;
+        }
+        .category-item p {
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+        .footer {
+            background: #FFE6F2;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>服装分类大全</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html">返回阿章个人首页</a >
+        <a href="suit-story.html">套装故事解析</a >
+        <a href="match-skill.html">搭配技巧攻略</a >
+    </div>
+
+    <div class="container">
+        <p>《无限暖暖》服装分为4大核心类别，覆盖不同场景与玩法需求：</p >
+        
+        <div class="category-list">
+            <!-- 日常类服装 -->
+            <div class="category-item">
+                <h3>日常类</h3>
+                <p>包含休闲装、通勤装等生活化风格，属性偏向“舒适”，适配花愿镇等日常场景的NPC委托。</p >
+                <p>代表单品：棉质连衣裙、帆布鞋</p >
+            </div>
+            <!-- 奇幻类服装 -->
+            <div class="category-item">
+                <h3>奇幻类</h3>
+                <p>带有魔法、神话元素的服装（如翅膀、星纹装饰），是解锁古老遗迹机关的必备风格。</p >
+                <p>代表单品：星尘斗篷、精灵耳饰</p >
+            </div>
+            <!-- 限定类服装 -->
+            <div class="category-item">
+                <h3>限定类</h3>
+                <p>仅通过节日活动、联动企划获取的服装，通常带有专属特效，收藏价值较高。</p >
+                <p>代表套装：“花与信使”春日限定</p >
+            </div>
+            <!-- 属性类服装 -->
+            <div class="category-item">
+                <h3>属性类</h3>
+                <p>带有“保暖”“防水”等功能属性的服装，适配特定地图环境（如雪山场景需保暖装）。</p >
+                <p>代表单品：厚绒毛外套、防滑靴</p >
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 阿章 网页作品 | 家家有本暖暖的经</p >
+    </div>
+
+    <script src="js/common.js"></script>
+</body>
+</html>

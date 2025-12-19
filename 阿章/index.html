@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿章 - 穿搭万象</title>
+    <!-- 引入通用样式 -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 统一基础样式（与其他页面保持一致） */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑", sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+        .header {
+            background: #FFE6F2;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #B3D9F2;
+        }
+        .header h1 {
+            margin: 0;
+            color: #D86C8A;
+        }
+        .nav {
+            background: #F8F9FA;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #D86C8A;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            color: #B3D9F2;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        /* 模块二专属样式 */
+        .module-entry {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .entry-card {
+            flex: 1;
+            min-width: 250px;
+            background: #F8F9FA;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .entry-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .entry-card a {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #FFE6F2;
+            color: #D86C8A;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .entry-card a:hover {
+            background: #B3D9F2;
+            color: #fff;
+        }
+        /* 统一页脚样式 */
+        .footer {
+            background: #FFE6F2;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>阿章负责模块：穿搭万象 - 无限暖暖服装指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../index.html.html">返回团队分工页</a >
+        <a href="clothes-category.html">服装分类大全</a >
+        <a href="suit-story.html">套装故事解析</a >
+        <a href="match-skill.html">搭配技巧攻略</a >
+    </div>
+
+    <div class="container">
+        <h2 style="color: #D86C8A; border-bottom: 2px solid #B3D9F2; padding-bottom: 10px;">模块二：穿搭万象</h2>
+        <p>全面梳理《无限暖暖》服装体系，解锁穿搭的无限可能，从日常休闲到奇幻盛典，总有一款适配你的风格~</p >
+        
+        <div class="module-entry">
+            <!-- 服装分类入口 -->
+            <div class="entry-card">
+                <img src="images/clothes-daily.jpg" alt="日常服装">
+                <h3>服装分类大全</h3>
+                <a href="clothes-category.html">查看分类</a >
+            </div>
+            <!-- 套装故事入口 -->
+            <div class="entry-card">
+                <img src="images/suit-story.jpg" alt="套装故事">
+                <h3>套装故事解析</h3>
+                <a href="suit-story.html">了解故事</a >
+            </div>
+            <!-- 搭配技巧入口 -->
+            <div class="entry-card">
+                <img src="images/match-skill.jpg" alt="搭配技巧">
+                <h3>搭配技巧攻略</h3>
+                <a href="match-skill.html">学搭配</a >
+            </div>
+        </div>
+    </div>
+
+    <!-- 统一添加页脚 -->
+    <div class="footer">
+        <p>© 2025 阿章 网页作品 | 家家有本暖暖的经</p >
+    </div>
+
+    <!-- 通用脚本（路径正确） -->
+    <script src="js/common.js"></script>
+</body>
+</html>
